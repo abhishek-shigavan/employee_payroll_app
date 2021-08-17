@@ -18,7 +18,7 @@
             </div>
         </header>
         <div class="form_Content">
-            <form class="form">
+            <form class="form" action="#" onreset="resetForm()" onsubmit="save()">
                 <div class="form_Head">
                     Employee Payroll Form
                 </div>
@@ -143,11 +143,11 @@
                     <label class="label text" for="notes">Notes</label>
                     <textarea id="notes" class="input" name="Notes" style="height:100px;"></textarea>
                 </div>   
-                <div class="row_Content">
-                    <div class="submit-reset">
-                        <button type="button" id="cancelButton">Cancel</button>
-                        <button type="submit" class="button submitButton" id="submitButton">Submit</button>
-                        <button type="reset" class="resetButton button" id="resetButton">Reset</button>
+                <div class="button_Parent">
+                    <div class="submit_Reset">
+                        <button type="button" class="button cancel_Button" id="cancelButton">Cancel</button>
+                        <button type="submit" class="button submit_Button" id="submitButton">Submit</button>
+                        <button type="reset" class="reset_Button button" id="resetButton">Reset</button>
                     </div>
                 </div>     
             </form>
