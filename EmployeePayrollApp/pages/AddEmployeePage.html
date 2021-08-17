@@ -25,6 +25,7 @@
                 <div class="row_Content">
                     <label class="label text" for="name">Name</label>
                     <input class="input" type="text" id="name" name="name" placeholder="Your name..." required />
+
                 </div>
                 <div class="row_Content">
                     <label class="label text" for="profile">Profile Image</label>
@@ -74,7 +75,7 @@
                 <div class="row_Content">
                     <label class="label text" for="salary">Choose Your Salary</label>
                     <input class="input" type="range" name="salary" id="salary" min="300000" max="5000000" step="100" value="4000000" required>
-                    <output for="salary">4000000</output>
+                    <output class="salary_Output" for="salary">4000000</output>
                 </div>
                 <div class="row_Content">
                     <label class="label text" for="startDate">Start Date</label>
@@ -152,5 +153,6 @@
                 </div>     
             </form>
         </div>
+        <script src="../js/EmployeeValidation.js"></script>
     </body> 
 </html>
