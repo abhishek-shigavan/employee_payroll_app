@@ -205,3 +205,10 @@ select {
         align-items: flex-start;
     }
 }
+
+error_Output {
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
