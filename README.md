@@ -37,3 +37,17 @@
   12)  UC12 :   Saving employee payroll object to local storage
   
   13)  UC13 :   Adding functionality to Reset button. To reset the form by clicking Reset button
+  
+  14)  UC14 :   Creating employee payroll system home page UI
+  
+  15)  UC15 :   Creating header section of home page with employee details & add employee button
+  
+  16)  UC16 :   Creating tabular format to display employee payroll details on home page
+  
+  17)  UC17 :   Displaying employee payroll details in tabular format from JS file using template literals
+  
+  18)  UC18 :   Displaying employee payroll details through JSON object of employee payroll
+  
+  19)  UC19 :   Displaying employee payroll details from local storage on home page
+
+
