@@ -11,23 +11,51 @@
         <title>Employee Payroll App</title>
     </head>
     <body>
-        <header class="header-content header">
-            <div class="logo-content">
+        <header class="header_Content header">
+            <div class="logo_Content">
                 <img src="../assets/images/logo.png" alt="">
                 <div>
-                    <span class="emp-text">EMPLOYEE</span><br>
-                    <span class="emp-text emp-payroll">PAYROLL</span>
+                    <span class="emp_Text">EMPLOYEE</span><br>
+                    <span class="emp_Text emp_Payroll">PAYROLL</span>
                 </div>
             </div>
         </header>
-        <div class="main-content">
-            <div class="header-content">
-                <div class="emp-detail-text">
+        <div class="main_Content">
+            <div class="header_Content">
+                <div class="emp_Detail_Text">
                     Employee Details
-                    <div class="emp-count">10</div>
+                    <div class="emp_Count">10</div>
                 </div>
-                <a href="../pages/AddEmployeePage.html" class="add-button">
+                <a href="../pages/AddEmployeePage.html" class="add_Button">
                 <img src="../assets/icons/addButton.svg" alt="">Add User</a>
+            </div>
+            <div class="table_Main">
+                <table id ="display" class="table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Department</th>
+                        <th>Salary</th>
+                        <th>Start Date</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr>
+                        <td>Abhishek Shigavan</td>
+                        <td>Male</td>
+                        <td>
+                            <div class="dept_Label">HR</div>
+                            <div class="dept_Label">Engineer</div>
+                        </td>
+                        <td>300000</td>
+                        <td>December 1 2020</td>
+                        <td>
+                            <img id="1" onclick="remove(this)" alt="delete"
+                                        src="../assets/icons/deleteIcon.svg">
+                            <img id="1" onclick="update(this)" alt="edit"
+                                        src="../assets/icons/createIcon.svg">           
+                        </td>
+                    </tr>
+                </table>  
             </div>
         </div>
     </body>
