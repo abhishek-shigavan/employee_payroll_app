@@ -60,11 +60,8 @@ class EmployeeDetails {
     }
 
     toString() {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        const empDate = !this.start_date ? "undefined" :
-                        this.start_date.toLocaleDateString("en-US", options);
         return "Name = " + this.name + ", ProfilePic = " + this.profilePic + ", Gender = " + this.gender + 
-               ", Department = " + this.department + ", Salary = " + this.salary + ", StartDate = " + empDate + 
+               ", Department = " + this.department + ", Salary = " + this.salary + ", StartDate = " + this.start_date + 
                ", Note = " +this.note;
     }
 }
