@@ -8,7 +8,7 @@ html body {
     background-color: #fff;
 }
 
-.header-content {
+.header_Content {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -16,7 +16,7 @@ html body {
     border: 0px solid green;
 }
 
-.logo-content {
+.logo_Content {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,11 +24,11 @@ html body {
     width: 80%;
 }
 
-.logo-content-img {
+.logo_Content_Img {
     border: solid 0px #42515f;
 }
 
-.emp-text {
+.emp_Text {
     font: normal normal bold 20px/25px Montserrat;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
@@ -36,20 +36,20 @@ html body {
     text-transform: capitalize;
 }
 
-.emp-payroll {
+.emp_Payroll {
     color: #42515f;
 }
 
-.main-content {
+.main_Content {
     display:flex;
     flex-direction: column;
     min-height:calc(100vh - 80px);
     background-color: #f7f7f7;
     padding:30px 0 10px;
     box-sizing:border-box;
-    }
+}
 
-.header-content {
+.header_Content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -57,16 +57,16 @@ html body {
     width: 80%;
     margin: 0 auto;
     padding-bottom: 25px;
-    }
+}
 
-.emp-detail-text{
+.emp_Detail_Text{
     font: normal normal bold 24px/25px Roboto;
     letter-spacing: 0px;
     color: #42515f;
     opacity: 1;
-    }
+}
 
-.emp-count {
+.emp_Count {
     background-color: #82a70c;
     color:#ffffff;
     border-radius: 42%;
@@ -74,9 +74,9 @@ html body {
     width:26px;
     text-align: center;
     display:inline-block;
-    }
+}
 
-.add-button {
+.add_Button {
     font: normal normal normal 22px/29px Roboto;
     letter-spacing: 0px;
     color: #ffffff;
@@ -88,4 +88,72 @@ html body {
     outline: none;
     cursor: pointer;
     text-decoration: none;
+}
+
+.table_Main {
+    width: 80%;
+    margin:0 auto;
+    overflow: auto;
+}
+
+.table {
+     width: 100%;
+    border-collapse: seperate;
+    border-spacing: 0 15px;
+    min-width: 800px;
+}
+
+td, th {
+    text-align: left;
+    padding: 5px 8px;
+}
+    
+th  {
+    background: #42515F 0% 0% no-repeat padding-box;
+    border-radius: 3px 3px 0px 0px;
+    text-align: left;
+    font: normal normal medium 18px/24px Roboto;
+    letter-spacing: 0px;
+    color:#FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    border: 0px solid #dddddd;
+}
+    
+tr:not(:first_Child) {
+    background: #ffffff 0% 0% no repeat padding-box;
+    border: 1px solid #e3e3e3;
+    border-radius: 3px;
+}
+    
+td {
+    font : normal normal normal 14px/21px Roboto;
+    letter-spacing: 0px;
+    color: #3d3d3d;
+    opacity: 1;
+}
+    
+td:first_Child {
+    display: flex;
+    align-items: center;
+}
+    
+td img:first_Child{
+    margin-right: 10px;
+}
+    
+td img {
+    cursor: pointer;
+}
+    
+.dept_Label {
+    background-color: #e9fea5;
+    border-radius: 40%;
+    width: fit-content;
+    padding: 1px 7px;
+    text-align: center;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
+    margin-bottom: 8px;
 }
