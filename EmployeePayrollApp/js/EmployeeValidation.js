@@ -46,7 +46,9 @@ const createEmployeePayroll = () => {
    employeePayrollData.note = getInputValueById('#notes');
    let date = `${getInputValueById('#year')}-${getInputValueById('#month')}-${getInputValueById('#day')}`;
    var userDate = new Date(date);
-   employeePayrollData.start_date = userDate;
+   const options = { year: 'numeric', month: 'long', day: 'numeric' };
+   var formatedDate = userDate.toLocaleDateString("en-US", options)
+   employeePayrollData.start_date = formatedDate;
    createAndUpdateStorage(employeePayrollData);
    alert(employeePayrollData.toString());
    return employeePayrollData;
