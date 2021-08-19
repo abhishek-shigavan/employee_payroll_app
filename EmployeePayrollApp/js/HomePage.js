@@ -7,19 +7,21 @@ const createInnerHtml = () => {
     const headerHtml = "<th></th><th>Name</th><th>Gender</th>" +
                     "<th>Department</th><th>Salary</th><th>Start Date</th>" +
                     "<th>Actions</th>";
-    const innerHtml = `${headerHtml}
+    let innerHtml = `${headerHtml}`;
+    let empPayrollList = createEmployeePayrollJSON();  
+    for ( const empPayrollData of empPayrollList) {
+        innerHtml = `${innerHtml}
         <tr>
             <td>
-                <img class="profile" alt="" src="../assets/profile_pics/profile2.png">
+                <img class="profile" alt="" src="${empPayrollData._profilePic}">
             </td>
-            <td>Abhishek Shigavan</td>
-            <td>Male</td>
+            <td>${empPayrollData._name}</td>
+            <td>${empPayrollData._gender}</td>
             <td>
-                <div class="dept_Label">HR</div>
-                <div class="dept_Label">Engineer</div>
+                ${getDeptHtml(empPayrollData._department)}
             </td>
-            <td>300000</td>
-            <td>December 1 2020</td>
+            <td>${empPayrollData._salary}</td>
+            <td>${empPayrollData._start_date}</td>
             <td>
                 <img id="1" onclick="remove(this)" alt="delete"
                             src="../assets/icons/deleteIcon.svg">
@@ -27,6 +29,43 @@ const createInnerHtml = () => {
                             src="../assets/icons/createIcon.svg">           
             </td>
         </tr>
-    `;
+        `;
+    }
     document.querySelector("#display").innerHTML = innerHtml;
 };
+
+const getDeptHtml = (deptList) => {
+    let deptHtml = '';
+    for ( const dept of deptList ) {
+        deptHtml = `${deptHtml} <div class="dept_Label">${dept}</div>`
+    }
+    return deptHtml;
+}
+
+const createEmployeePayrollJSON = () => {
+    let empPayrollListLocal = [
+        {
+            _name: 'Abhishek Shigavan',
+            _gender: 'Male',
+            _department: [
+                'Engineering', 'HR'
+            ],
+            _salary: '2500000',
+            _start_date: 'December 01 2020',
+            _note: '',
+            _profilePic: '../assets/profile_pics/profile2.png'
+        },
+        {
+            _name: 'Akash Kakde',
+            _gender: 'Male',
+            _department: [
+                'Engineering', 'Finance'
+            ],
+            _salary: '4500000',
+            _start_date: 'May 31 2019',
+            _note: '',
+            _profilePic: '../assets/profile_pics/profile4.png'
+        }
+    ]
+    return empPayrollListLocal;
+}
